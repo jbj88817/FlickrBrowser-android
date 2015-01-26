@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Base" parent="AppTheme">
+        <item name="colorPrimary">@color/flickrPrimaryBackgroundColor</item>
+        <item name="colorPrimaryDark">@color/flickSecondaryBackgroundColor</item>
+    </style>
+
+</resources>

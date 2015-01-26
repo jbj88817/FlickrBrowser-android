@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/bojiejiang/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.3.2/d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27/picasso-2.3.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27">
+        <dex dex="/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/pre-dexed/debug/picasso-2.3.2-ab3662800b8e4cc68873947226c185057b428aec.jar" />
+    </item>
+    <item
+        jar="/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/pre-dexed/debug/classes-225071ac064afab116c082559eb3ed11b6a7d371.jar" />
+    </item>
+    <item
+        jar="/Users/bojiejiang/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-11231d7215ea971321ae151a23f962a880142b52.jar" />
+    </item>
+    <item
+        jar="/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/pre-dexed/debug/classes-d6bc7919f225c67b2d58082a22da1001a55472a8.jar" />
+    </item>
+    <item
+        jar="/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/pre-dexed/debug/classes-70f28de68832b08bfc9cb476384c5b23fbee9127.jar" />
+    </item>
+    <item
+        jar="/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-7c153f866d2f5240ca168ee56195a431546cc57b.jar" />
+    </item>
+
+</items>
