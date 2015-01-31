@@ -1,7 +1,9 @@
 package com.bojie.flickrbrowser;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.preference.PreferenceManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
@@ -11,10 +13,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends BaseActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
-    private List<Photo> mPhotoList = new ArrayList<>();
+    private List<Photo> mPhotoList = new ArrayList<Photo>();
     private RecyclerView mRecyclerView;
     private FlickrRecyclerViewAdapter mFlickrRecyclerViewAdapter;
 
@@ -23,16 +25,31 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        activateToolBar();
+
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         ProcessPhotos processPhotos = new ProcessPhotos("google", true);
         processPhotos.execute();
-
-
-
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (mFlickrRecyclerViewAdapter != null) {
+            String query = getSavedPreferenceData(FLICKR_QUERY);
+            if (query.length() > 0) {
+                ProcessPhotos processPhotos = new ProcessPhotos(query, true);
+                processPhotos.execute();
+            }
+        }
+    }
+
+    private String getSavedPreferenceData(String key) {
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        return sharedPreferences.getString(key, "");
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -50,6 +67,11 @@ public class MainActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            return true;
+        }
+        if (id == R.id.action_search) {
+            Intent intent = new Intent(this, SearchActivity.class);
+            startActivity(intent);
             return true;
         }
 
@@ -72,7 +94,7 @@ public class MainActivity extends ActionBarActivity {
 
             protected void onPostExecute(String webData) {
                 super.onPostExecute(webData);
-                mFlickrRecyclerViewAdapter  = new FlickrRecyclerViewAdapter(MainActivity.this, getPhotos());
+                mFlickrRecyclerViewAdapter = new FlickrRecyclerViewAdapter(MainActivity.this, getPhotos());
                 mRecyclerView.setAdapter(mFlickrRecyclerViewAdapter);
             }
 

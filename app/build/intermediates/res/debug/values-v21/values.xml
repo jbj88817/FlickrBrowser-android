@@ -269,4 +269,9 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
     </style>
+    <!-- From: file:/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/src/main/res/values-v21/styles.xml -->
+    <eat-comment/>
+    <style name="Theme.Flickr" parent="Theme.Base">
+        <item name="android:navigationBarColor">?colorPrimaryDark</item>
+    </style>
 </resources>

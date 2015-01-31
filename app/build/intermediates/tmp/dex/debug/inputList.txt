@@ -1,5 +1,6 @@
 /Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/classes/debug
 /Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-11231d7215ea971321ae151a23f962a880142b52.jar
+/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/pre-dexed/debug/classes-e95338ef23869322cd05227cca6ff724ec09b5ac.jar
 /Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/pre-dexed/debug/picasso-2.3.2-ab3662800b8e4cc68873947226c185057b428aec.jar
 /Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-7c153f866d2f5240ca168ee56195a431546cc57b.jar
 /Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/pre-dexed/debug/classes-225071ac064afab116c082559eb3ed11b6a7d371.jar

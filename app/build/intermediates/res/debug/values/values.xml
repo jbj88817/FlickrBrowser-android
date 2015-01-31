@@ -44,12 +44,12 @@
     <color name="dim_foreground_material_light">#ff323232</color>
     <!-- From: file:/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/src/main/res/values/colors.xml -->
     <eat-comment/>
-    <color name="flickBackgroundColor">@color/md_grey_600</color>
-    <color name="flickColorBackgroundAccent">@color/md_pink_500</color>
-    <color name="flickPrimaryTextColor">@color/md_white_1000</color>
-    <color name="flickSecondaryBackgroundColor">@color/md_blue_700</color>
-    <color name="flickSecondaryTextColor">@color/md_yellow_500</color>
+    <color name="flickrBackgroundColor">@color/md_grey_600</color>
+    <color name="flickrColorBackgroundAccent">@color/md_pink_500</color>
     <color name="flickrPrimaryBackgroundColor">@color/md_blue_500</color>
+    <color name="flickrPrimaryTextColor">@color/md_white_1000</color>
+    <color name="flickrSecondaryBackgroundColor">@color/md_blue_700</color>
+    <color name="flickrSecondaryTextColor">@color/md_yellow_500</color>
     <!-- From: file:/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
@@ -445,12 +445,29 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <!-- From: file:/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="action_search">Search</string>
     <string name="action_settings">Settings</string>
     <string name="app_name">Flickr Browser</string>
     <string name="hello_world">Hello world!</string>
+    <string name="search_menu">Search</string>
+    <string name="searchable_hint">Enter photo tags</string>
+    <string name="searchable_label">Search Query</string>
+    <string name="title_activity_search">Search Activity</string>
     <!-- From: file:/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/src/main/res/values/styles.xml -->
     <eat-comment/>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="ActionBar.TitleText" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/flickrPrimaryTextColor</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="ActionBarThemeOverlay" parent="">
+
+        <item name="android:textColorPrimary">@color/flickrPrimaryTextColor</item>
+        <item name="colorControlHighlight">@color/flickrBackgroundColor</item>
+        <item name="android:actionMenuTextColor">@color/flickrPrimaryTextColor</item>
+        <item name="android:textColorSecondary">@color/flickrPrimaryTextColor</item>
+        <item name="android:background">@color/flickrPrimaryBackgroundColor</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
     </style>
     <!-- From: file:/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
@@ -1451,6 +1468,20 @@
         <item name="windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
     </style>
+    <!-- From: file:/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Theme.Base" parent="AppTheme">
+        <item name="colorPrimary">@color/flickrPrimaryBackgroundColor</item>
+        <item name="colorPrimaryDark">@color/flickrSecondaryBackgroundColor</item>
+        <item name="colorAccent">@color/flickrColorBackgroundAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/flickrBackgroundColor</item>
+
+    </style>
+    <style name="Theme.Flickr" parent="Theme.Base"/>
+    <!-- From: file:/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <eat-comment/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
