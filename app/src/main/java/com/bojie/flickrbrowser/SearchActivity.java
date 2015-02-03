@@ -10,7 +10,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-
 public class SearchActivity extends BaseActivity {
 
     private SearchView mSearchView;
@@ -32,12 +31,13 @@ public class SearchActivity extends BaseActivity {
         SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         mSearchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
         mSearchView.setIconified(false);
-        mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener(){
+        mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
                 sharedPreferences.edit().putString(FLICKR_QUERY, query).commit();
                 mSearchView.clearFocus();
+                finish();
                 return true;
             }
 
@@ -46,11 +46,12 @@ public class SearchActivity extends BaseActivity {
                 return true;
             }
         });
-        mSearchView.setOnCloseListener(new SearchView.OnCloseListener(){
+
+        mSearchView.setOnCloseListener(new SearchView.OnCloseListener() {
             @Override
             public boolean onClose() {
                 finish();
-                return true;
+                return false;
             }
         });
         return true;

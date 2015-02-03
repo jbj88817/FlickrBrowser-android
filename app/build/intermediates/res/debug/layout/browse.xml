@@ -3,21 +3,24 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:orientation="horizontal"
-              android:padding="2dp">
+              android:paddingTop="10dp"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp">
 
     <ImageView
+        android:id="@+id/thumbnail"
         android:layout_width="80dp"
         android:layout_height="60dp"
-        android:id="@+id/thumbnail"
         android:layout_gravity="center_horizontal"
         android:scaleType="fitStart"
         android:src="@drawable/placeholder"/>
 
     <TextView
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_title"
         android:layout_marginLeft="8dp"
-        android:maxLines="3"/>
+        android:maxLines="3"
+        android:textColor="@color/flickrSecondaryTextColor"/>
 
 </LinearLayout><!-- From: file:/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/src/main/res/layout/browse.xml -->
