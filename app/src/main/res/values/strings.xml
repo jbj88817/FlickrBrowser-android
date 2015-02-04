@@ -9,5 +9,6 @@
     <string name="search_menu">Search</string>
     <string name="searchable_label">Search Query</string>
     <string name="searchable_hint">Enter photo tags</string>
+    <string name="title_activity_view_photo_details">PhotoDetails</string>
 
 </resources>
