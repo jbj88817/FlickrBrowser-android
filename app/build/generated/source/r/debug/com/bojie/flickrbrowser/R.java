@@ -1689,8 +1689,8 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0a002e;
         public static final int action_mode_bar_stub=0x7f0a002d;
         public static final int action_mode_close_button=0x7f0a0020;
-        public static final int action_search=0x7f0a0044;
-        public static final int action_settings=0x7f0a0043;
+        public static final int action_search=0x7f0a0048;
+        public static final int action_settings=0x7f0a0047;
         public static final int activity_chooser_view_content=0x7f0a0021;
         public static final int always=0x7f0a0016;
         public static final int app_bar=0x7f0a003f;
@@ -1717,6 +1717,10 @@ containing a value of this type.
         public static final int never=0x7f0a0019;
         public static final int none=0x7f0a000e;
         public static final int normal=0x7f0a000a;
+        public static final int photo_author=0x7f0a0042;
+        public static final int photo_image=0x7f0a0041;
+        public static final int photo_tags=0x7f0a0044;
+        public static final int photo_title=0x7f0a0043;
         public static final int progress_circular=0x7f0a0005;
         public static final int progress_horizontal=0x7f0a0006;
         public static final int radio=0x7f0a002b;
@@ -1730,7 +1734,7 @@ containing a value of this type.
         public static final int search_mag_icon=0x7f0a0038;
         public static final int search_plate=0x7f0a0039;
         public static final int search_src_text=0x7f0a003a;
-        public static final int search_view=0x7f0a0045;
+        public static final int search_view=0x7f0a0049;
         public static final int search_voice_btn=0x7f0a003e;
         public static final int shortcut=0x7f0a002a;
         public static final int showCustom=0x7f0a000f;
@@ -1739,9 +1743,9 @@ containing a value of this type.
         public static final int split_action_bar=0x7f0a0007;
         public static final int submit_area=0x7f0a003c;
         public static final int tabMode=0x7f0a000b;
-        public static final int thumbnail=0x7f0a0041;
+        public static final int thumbnail=0x7f0a0045;
         public static final int title=0x7f0a0027;
-        public static final int tv_title=0x7f0a0042;
+        public static final int tv_title=0x7f0a0046;
         public static final int up=0x7f0a0008;
         public static final int useLogo=0x7f0a0012;
         public static final int withText=0x7f0a001a;
@@ -1776,14 +1780,16 @@ containing a value of this type.
         public static final int abc_simple_dropdown_hint=0x7f040016;
         public static final int activity_main=0x7f040017;
         public static final int activity_main_search=0x7f040018;
-        public static final int browse=0x7f040019;
-        public static final int fragment_main=0x7f04001a;
-        public static final int support_simple_spinner_dropdown_item=0x7f04001b;
-        public static final int toolbar=0x7f04001c;
+        public static final int activity_photo_details=0x7f040019;
+        public static final int browse=0x7f04001a;
+        public static final int fragment_main=0x7f04001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f04001c;
+        public static final int toolbar=0x7f04001d;
     }
     public static final class menu {
         public static final int menu_main=0x7f0e0000;
-        public static final int menu_search=0x7f0e0001;
+        public static final int menu_photo_details=0x7f0e0001;
+        public static final int menu_search=0x7f0e0002;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -1813,6 +1819,7 @@ containing a value of this type.
         public static final int searchable_hint=0x7f0c0015;
         public static final int searchable_label=0x7f0c0016;
         public static final int title_activity_search=0x7f0c0017;
+        public static final int title_activity_view_photo_details=0x7f0c0018;
     }
     public static final class style {
         public static final int ActionBar_TitleText=0x7f0d0000;

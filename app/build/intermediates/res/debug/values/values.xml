@@ -453,6 +453,7 @@
     <string name="searchable_hint">Enter photo tags</string>
     <string name="searchable_label">Search Query</string>
     <string name="title_activity_search">Search Activity</string>
+    <string name="title_activity_view_photo_details">PhotoDetails</string>
     <!-- From: file:/Users/bojiejiang/AndroidStudioProjects/FlickrBrowser/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="ActionBar.TitleText" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title">

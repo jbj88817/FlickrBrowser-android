@@ -43,6 +43,14 @@
                 android:resource="@xml/searchable" />
         </activity>
         <activity
+            android:name="com.bojie.flickrbrowser.ViewPhotoDetailsActivity"
+            android:label="@string/title_activity_view_photo_details"
+            android:parentActivityName="com.bojie.flickrbrowser.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bojie.flickrbrowser.MainActivity" />
+        </activity>
+        <activity
             android:name="android.support.v7.widget.TestActivity"
             android:label="RecyclerViewTestActivity" />
     </application>
